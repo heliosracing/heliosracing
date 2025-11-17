@@ -1,5 +1,24 @@
 <link rel="stylesheet" href="style.css" />
 
+:root{
+  --bg: #f7f7f5;
+  --panel: #ffffff;
+  --ink: #1c1c1c;
+  --muted: #6b6b6b;
+  --brand: #2a7a62;
+  --brand-2: #d0e3db;
+  --accent: #e6b800;
+  --ring: rgba(42,122,98,.25);
+  --shadow: 0 10px 30px rgba(0,0,0,.08);
+  --radius: 16px;
+}
+
+.container{
+  width: min(1150px, 92%);
+  margin: 0 auto;
+}
+
+
 header{position:sticky;top:0;background:rgba(255,255,255,.85);backdrop-filter:saturate(180%) blur(8px);border-bottom:1px solid #ececec;z-index:100}
 .nav{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
 .brand{display:flex;gap:10px;align-items:center;font-weight:700}
