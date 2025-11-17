@@ -11,6 +11,27 @@
   --radius: 16px;
 }
 
+/* Reset / global base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background: var(--bg);
+  color: var(--ink);
+  line-height: 1.5;
+}
+
+/* Make sure images never overflow */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+
 .container{
   width: min(1150px, 92%);
   margin: 0 auto;
@@ -23,7 +44,8 @@ header{
   background:rgba(255,255,255,.85);
   backdrop-filter:saturate(180%) blur(8px);
   border-bottom:1px solid #ececec;
-  z-index:100
+  z-index:100;
+  padding: 6px 0;
 }
 
 .nav{
@@ -53,6 +75,12 @@ header{
 }
 .nav a{
   font-weight:600
+  font-size: 15px;
+  text-decoration: none;
+}
+
+.actions .icon-btn svg {
+  stroke-width: 2.2;
 }
 .menu{
   display:flex;
@@ -90,11 +118,11 @@ header{
 
 /* Hero */
 .hero{
-  display:grid;
-  grid-template-columns:1.2fr .8fr;
-  gap:40px;
-  align-items:center;
-  padding:52px 0
+  display: grid;
+  grid-template-columns:1.1fr 0.9fr;
+  gap: 50px;
+  align-items: center;
+  padding: 70px 0;
 }
 .hero-card{
   background:var(--panel);
@@ -106,18 +134,21 @@ header{
   aspect-ratio: 16/10;
   background:#eaeaea
 }
-.hero h1{
-  font:700 clamp(32px,5vw,56px)/1.1 "Playfair Display",serif;
-  margin:0 0 16px
+.hero h1 {
+  margin-bottom: 12px;
 }
-.hero p{
-  color:var(--muted);
-  margin:0 0 20px
+
+.hero p {
+  max-width: 480px;
+  font-size: 17px;
 }
 .hero .actions{
   display:flex;
   gap:12px;
   align-items:center
+}
+.hero-card img {
+  border-radius: var(--radius);
 }
 .btn{
   display:inline-grid;
