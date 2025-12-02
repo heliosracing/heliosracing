@@ -1,7 +1,5 @@
-/* Refined CSS for Wix-inspired Home Goods Template */
-
 /* ==========================
-   CSS RESET & GLOBAL BASE
+   RESET & GLOBAL BASE
 ========================== */
 * {
   margin: 0;
@@ -9,7 +7,8 @@
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   font-family: "Inter", sans-serif;
   background: var(--bg);
   color: var(--ink);
@@ -19,19 +18,20 @@ html, body {
 
 img {
   max-width: 100%;
+  height: auto;
   display: block;
-   height: auto;
 }
 
-
-button, input, a {
+button,
+input,
+a {
   font-family: inherit;
 }
 
 /* ==========================
    VARIABLES
 ========================== */
-:root{
+:root {
   --bg: #f7f7f5;
   --panel: #ffffff;
   --ink: #1c1c1c;
@@ -39,8 +39,8 @@ button, input, a {
   --brand: #2a7a62;
   --brand-2: #d0e3db;
   --accent: #e6b800;
-  --ring: rgba(42,122,98,.25);
-  --shadow: 0 10px 30px rgba(0,0,0,.08);
+  --ring: rgba(42, 122, 98, 0.25);
+  --shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
   --radius: 16px;
   --radius-sm: 10px;
   --max-width: 1150px;
@@ -49,33 +49,33 @@ button, input, a {
 /* ==========================
    LAYOUT CONTAINER
 ========================== */
-.container{
+.container {
   width: min(var(--max-width), 92%);
   margin: 0 auto;
 }
 
 /* ==========================
-   HEADER
+   HEADER (NAV BAR)
 ========================== */
-header{
+header {
   position: sticky;
   top: 0;
-  background: rgba(255,255,255,.82);
+  background: rgba(255, 255, 255, 0.82);
   backdrop-filter: saturate(180%) blur(14px);
   border-bottom: 1px solid #e7e7e7;
   z-index: 1000;
-  transition: background .25s ease, box-shadow .25s ease;
+  transition: background 0.25s ease, box-shadow 0.25s ease;
   padding: 6px 0;
 }
 
-.nav{
+.nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 14px 0;
 }
 
-.brand{
+.brand {
   display: flex;
   gap: 12px;
   align-items: center;
@@ -83,7 +83,7 @@ header{
   font-size: 18px;
 }
 
-.logo{
+.logo {
   width: 36px;
   height: 36px;
   border-radius: var(--radius-sm);
@@ -94,31 +94,31 @@ header{
   box-shadow: var(--shadow);
 }
 
-.logo svg{
+.logo svg {
   width: 20px;
   height: 20px;
 }
 
-.menu{
+.menu {
   display: flex;
   gap: 28px;
   align-items: center;
 }
 
-.menu a{
+.menu a {
   color: #2d2d2d;
-  opacity: .9;
+  opacity: 0.9;
   text-decoration: none;
   font-weight: 600;
   font-size: 15px;
-  transition: opacity .2s;
+  transition: opacity 0.2s;
 }
 
-.menu a:hover{
+.menu a:hover {
   opacity: 1;
 }
 
-.icon-btn{
+.icon-btn {
   display: grid;
   place-items: center;
   width: 40px;
@@ -126,28 +126,32 @@ header{
   border-radius: 999px;
   background: var(--panel);
   border: 1px solid #eaeaea;
-  box-shadow: 0 2px 10px rgba(0,0,0,.04);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
   cursor: pointer;
-  transition: background .2s ease;
+  transition: background 0.2s ease;
 }
 
-.icon-btn:hover{
+.icon-btn:hover {
   background: #f5f5f5;
 }
 
-.hamburger{ display:none; }
+.hamburger {
+  display: none;
+}
 
 /* ==========================
-   HERO
+   HERO (FULL BACKGROUND IMAGE)
 ========================== */
 .hero {
   position: relative;
   height: 80vh; /* change to 100vh for full screen */
   width: 100%;
   background-image: url("eclipse_-_f1is23wf_car_-_livery_2023-aug-30_01-21-07pm-000_customizedview26817851687.png");
+  /* if image is in /images folder, use: url("images/yourfile.png") */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -157,7 +161,7 @@ header{
 .hero-overlay {
   position: absolute;
   inset: 0;
-  background: rgba(0,0,0,0.28);
+  background: rgba(0, 0, 0, 0.28);
 }
 
 .hero-content {
@@ -177,17 +181,18 @@ header{
 .hero-content p {
   font-size: 18px;
   margin-bottom: 22px;
-  color: rgba(255,255,255,0.9);
+  color: rgba(255, 255, 255, 0.9);
 }
 
-/* center buttons */
+/* hero buttons */
 .hero-content .actions {
   display: flex;
   justify-content: center;
   gap: 14px;
 }
 
-.btn{
+/* Buttons (reused everywhere) */
+.btn {
   display: inline-grid;
   place-items: center;
   height: 48px;
@@ -198,181 +203,181 @@ header{
   font-weight: 600;
   text-decoration: none;
   color: var(--ink);
-  transition: all .2s;
+  transition: all 0.2s;
 }
 
-.btn:hover{
+.btn:hover {
   background: #f6f6f6;
 }
 
-.btn.primary{
+.btn.primary {
   background: var(--brand);
   border-color: var(--brand);
   color: #fff;
 }
 
-.btn.primary:hover{
+.btn.primary:hover {
   background: #23644f;
-}
-
-.trust{
-  display:flex;
-  gap:20px;
-  color:var(--muted);
-  margin-top:18px;
-  font-size: 15px;
 }
 
 /* ==========================
    PROMO STRIP
 ========================== */
-.strip{
+.strip {
   background: var(--brand-2);
   border: 1px solid #cfe5dc;
   padding: 10px 0;
   color: #20463b;
 }
-.strip .container{
-  display:flex;
-  justify-content:center;
-  gap:26px;
-  flex-wrap:wrap;
-  font-weight:600;
+
+.strip .container {
+  display: flex;
+  justify-content: center;
+  gap: 26px;
+  flex-wrap: wrap;
+  font-weight: 600;
 }
 
 /* ==========================
-   PRODUCTS
+   SECTIONS & PRODUCTS
 ========================== */
-.section{
+.section {
   padding: 60px 0;
 }
 
-.section h2{
+.section h2 {
   font: 700 32px/1.2 "Playfair Display", serif;
   margin-bottom: 10px;
 }
 
-.section p.lead{
+.section p.lead {
   color: var(--muted);
   margin-bottom: 26px;
 }
 
-.grid{
+.grid {
   display: grid;
-  grid-template-columns: repeat(3,1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 24px;
 }
 
-.card{
+.card {
   background: var(--panel);
   border-radius: 14px;
   overflow: hidden;
   box-shadow: var(--shadow);
   border: 1px solid #eee;
-  transition: transform .15s ease, box-shadow .15s ease;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
 }
 
-.card:hover{
+.card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 14px 34px rgba(0,0,0,.12);
+  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.12);
 }
 
-.card .thumb{
+.card .thumb {
   aspect-ratio: 4/5;
   object-fit: cover;
-  background:#f0f0f0;
+  background: #f0f0f0;
 }
 
-.card .info{
+.card .info {
   padding: 16px 16px 20px;
 }
 
-.price-row{
-  display:flex;
-  justify-content:space-between;
-  margin-top:10px;
+.price-row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
 }
 
-.price{ font-weight:700; }
-
-.add{
-  height:40px;
-  padding:0 14px;
-  border-radius:10px;
-  border:1px solid #e8e8e8;
-  background:#fafafa;
-  cursor:pointer;
-  transition: background .2s;
+.price {
+  font-weight: 700;
 }
 
-.add:hover{ background:#f0f0f0; }
+.add {
+  height: 40px;
+  padding: 0 14px;
+  border-radius: 10px;
+  border: 1px solid #e8e8e8;
+  background: #fafafa;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.add:hover {
+  background: #f0f0f0;
+}
 
 /* ==========================
    ABOUT SECTION
 ========================== */
-.feature{
-  display:grid;
+.feature {
+  display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 40px;
-  align-items:center;
+  align-items: center;
 }
 
-.badge{
-  display:inline-block;
-  background:#ebf7f3;
-  color:#1b5a46;
-  border:1px solid #d2eee4;
-  padding:6px 12px;
-  border-radius:999px;
-  font-size:13px;
-  font-weight:600;
+.badge {
+  display: inline-block;
+  background: #ebf7f3;
+  color: #1b5a46;
+  border: 1px solid #d2eee4;
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 600;
   margin-bottom: 10px;
 }
 
 /* ==========================
    NEWSLETTER
 ========================== */
-.newsletter{
-  background:var(--panel);
-  border-radius:20px;
-  box-shadow:var(--shadow);
-  padding:32px;
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:30px;
-  border:1px solid #eee;
+.newsletter {
+  background: var(--panel);
+  border-radius: 20px;
+  box-shadow: var(--shadow);
+  padding: 32px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  border: 1px solid #eee;
 }
 
-.newsletter form{ display:flex; gap:12px; }
-
-input[type=email]{
-  flex:1;
-  height:48px;
-  border-radius:12px;
-  border:1px solid #ddd;
-  padding:0 14px;
-  outline:none;
-  font-size:15px;
+.newsletter form {
+  display: flex;
+  gap: 12px;
 }
 
-input[type=email]:focus{
-  border-color:var(--brand);
-  box-shadow:0 0 0 4px var(--ring);
+input[type="email"] {
+  flex: 1;
+  height: 48px;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+  padding: 0 14px;
+  outline: none;
+  font-size: 15px;
+}
+
+input[type="email"]:focus {
+  border-color: var(--brand);
+  box-shadow: 0 0 0 4px var(--ring);
 }
 
 /* ==========================
    INSTAGRAM GRID
 ========================== */
-.ig-grid{
+.ig-grid {
   display: grid;
-  grid-template-columns: repeat(6,1fr);
+  grid-template-columns: repeat(6, 1fr);
   gap: 8px;
 }
 
-.ig-grid img{
-  aspect-ratio:1/1;
+.ig-grid img {
+  aspect-ratio: 1/1;
   object-fit: cover;
-  border-radius:10px;
+  border-radius: 10px;
   width: 100%;
   height: auto;
 }
@@ -380,4 +385,90 @@ input[type=email]:focus{
 /* ==========================
    FOOTER
 ========================== */
-footer{
+footer {
+  padding: 60px 0 70px;
+  background: #fff;
+  border-top: 1px solid #ececec;
+}
+
+.foot {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1.2fr;
+  gap: 30px;
+}
+
+.foot h4 {
+  margin-bottom: 14px;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.foot p,
+.foot a {
+  color: var(--muted);
+  font-size: 15px;
+  text-decoration: none;
+}
+
+.foot a:hover {
+  color: var(--ink);
+}
+
+.foot .social {
+  display: flex;
+  gap: 8px;
+  font-size: 20px;
+}
+
+/* ==========================
+   RESPONSIVE
+========================== */
+@media (max-width: 900px) {
+  .menu {
+    display: none;
+  }
+
+  .hamburger {
+    display: grid;
+  }
+
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .feature,
+  .newsletter {
+    grid-template-columns: 1fr;
+  }
+
+  .ig-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .foot {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .hero {
+    height: 70vh;
+    padding: 0 16px;
+  }
+}
+
+@media (max-width: 520px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .ig-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .newsletter {
+    padding: 24px;
+  }
+
+  .hero {
+    height: 60vh;
+  }
+}
