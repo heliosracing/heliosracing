@@ -1,25 +1,37 @@
+<!DOCTYPE html>
 <html lang="en">
-<link rel="stylesheet" href="style.css" />
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Helios Racing</title>
-  <meta name="description" content="Eco-friendly home goods. Clean design, smooth shopping, and an Instagram-ready storefront." />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+  <meta
+    name="description"
+    content="Helios Racing — a student racing team competing in Formula-style competitions."
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <!-- Header / Navigation -->
   <header>
-    <div class="container nav" aria-label="Site">
+    <div class="container nav" aria-label="Site navigation">
       <div class="brand">
         <div class="logo" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2v20M2 12h20"/></svg>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+               stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M12 2v20M2 12h20" />
+          </svg>
         </div>
-        <a href="#" aria-label="EverHome, back to home">EverHome</a>
+        <a href="#main" aria-label="Helios Racing, back to top">Helios Racing</a>
       </div>
-      <nav class="menu" aria-label="Primary">
-        <a href="#members">Member</a>
+
+      <nav class="menu" aria-label="Primary navigation">
+        <a href="#members">Members</a>
         <a href="#about">About</a>
         <a href="#contact">Contact</a>
         <a href="#journal">Journal</a>
@@ -29,41 +41,47 @@
 
   <!-- Main site content -->
   <main id="main">
-    <!-- Hero section -->
-    <section class="hero">
-  <div class="hero-text">
-    <span class="badge">Eco • Minimal • Modern</span>
-    <h1>Helios Racing</h1>
-    <p>Thoughtfully designed, sustainably made, and built to last.</p>
+    <!-- Hero section (background image controlled by CSS .hero) -->
+    <section class="hero" aria-label="Helios Racing Hero">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <span class="badge">Student • Racing • Innovation</span>
+        <h1>Helios Racing</h1>
+        <p>Designing, building and racing high-performance cars as a team.</p>
 
+        <div class="actions">
+          <a href="#members" class="btn primary">Meet the team</a>
+          <a href="#about" class="btn">Learn more</a>
+        </div>
+      </div>
+    </section>
 
-  <div class="hero-image">
-    <img src=eclipse_-_f1is23wf_car_-_livery_2023-aug-30_01-21-07pm-000_customizedview26817851687.png
-         alt="car1"/>
-  </div>
-</section>
-
-
-    <!-- Promotional strip -->
+    <!-- Sponsor strip -->
     <div class="strip">
       <div class="container">
-        <div>Sponser</div>
-        <div>Sponser</div>
-        <div>Sponser</div>
+        <div>Sponsor</div>
+        <div>Sponsor</div>
+        <div>Sponsor</div>
       </div>
     </div>
 
-    <!-- Product grid -->
-    <section class="section container" id="Members" aria-label="Members">
+    <!-- Members grid -->
+    <section class="section container" id="members" aria-label="Team members">
       <h2>Members</h2>
       <div class="grid" role="list">
         <article class="card" role="listitem">
-          <img class="thumb" src="https://images.unsplash.com/photo-1579389083460-d6f1685ebd0b?q=80&w=1200&auto=format&fit=crop" alt="Chloe"/>
+          <img
+            class="thumb"
+            src="https://images.unsplash.com/photo-1579389083460-d6f1685ebd0b?q=80&w=1200&auto=format&fit=crop"
+            alt="Chloe"
+          />
           <div class="info">
             <div style="display:flex;justify-content:space-between;gap:12px;align-items:center">
               <h3 style="margin:0;font-size:18px">Chloe</h3>
             </div>
-            <p style="margin:8px 0 0;color:var(--muted);font-size:14px">Team Manager</p>
+            <p style="margin:8px 0 0;color:var(--muted);font-size:14px">
+              Team Manager
+            </p>
             <div class="price-row">
               <div class="price">xxx</div>
             </div>
@@ -71,10 +89,16 @@
         </article>
 
         <article class="card" role="listitem">
-          <img class="thumb" src="https://images.unsplash.com/photo-1541044331042-4566a23fa9f4?q=80&w=1200&auto=format&fit=crop" alt="Janice"/>
+          <img
+            class="thumb"
+            src="https://images.unsplash.com/photo-1541044331042-4566a23fa9f4?q=80&w=1200&auto=format&fit=crop"
+            alt="Janice"
+          />
           <div class="info">
             <h3 style="margin:0;font-size:18px">Janice</h3>
-            <p style="margin:8px 0 0;color:var(--muted);font-size:14px">Mechanical Engineer</p>
+            <p style="margin:8px 0 0;color:var(--muted);font-size:14px">
+              Mechanical Engineer
+            </p>
             <div class="price-row">
               <div class="price">xxx</div>
             </div>
@@ -82,41 +106,59 @@
         </article>
 
         <article class="card" role="listitem">
-          <img class="thumb" src="https://images.unsplash.com/photo-1607305387293-29c4b2a64d61?q=80&w=1200&auto=format&fit=crop" alt="Minnie"/>
+          <img
+            class="thumb"
+            src="https://images.unsplash.com/photo-1607305387293-29c4b2a64d61?q=80&w=1200&auto=format&fit=crop"
+            alt="Minnie"
+          />
           <div class="info">
             <h3 style="margin:0;font-size:18px">Minnie</h3>
-            <p style="margin:8px 0 0;color:var(--muted);font-size:14px">Graphic Designer</p>
+            <p style="margin:8px 0 0;color:var(--muted);font-size:14px">
+              Graphic Designer
+            </p>
             <div class="price-row">
               <div class="price">xxx</div>
             </div>
           </div>
         </article>
 
-         <article class="card" role="listitem">
-          <img class="thumb" src="https://images.unsplash.com/photo-1607305387293-29c4b2a64d61?q=80&w=1200&auto=format&fit=crop" alt="Jeannie"/>
+        <article class="card" role="listitem">
+          <img
+            class="thumb"
+            src="https://images.unsplash.com/photo-1607305387293-29c4b2a64d61?q=80&w=1200&auto=format&fit=crop"
+            alt="Jeannie"
+          />
           <div class="info">
             <h3 style="margin:0;font-size:18px">Jeannie</h3>
-            <p style="margin:8px 0 0;color:var(--muted);font-size:14px">Marketing Manager</p>
+            <p style="margin:8px 0 0;color:var(--muted);font-size:14px">
+              Marketing Manager
+            </p>
             <div class="price-row">
               <div class="price">xxx</div>
             </div>
           </div>
         </article>
-
       </div>
     </section>
 
-    <!-- About section -->
-    <section class="section container feature" id="about" aria-label="About">
-      <img src="https://images.unsplash.com/photo-1520975922295-c6b3f1d024b1?q=80&w=1500&auto=format&fit=crop" alt="Shelf with eco-friendly home goods" style="border-radius:16px"/>
+
+    <section class="section container feature" id="about" aria-label="About Helios Racing">
+      <img
+        src="https://images.unsplash.com/photo-1520975922295-c6b3f1d024b1?q=80&w=1500&auto=format&fit=crop"
+        alt="Workshop and racing equipment"
+        style="border-radius:16px"
+      />
       <div>
         <span class="badge">Our Story</span>
-        <h2>Made to last. Designed to love.</h2>
-        <p class="lead">We started EverHome with a simple idea: better things, fewer things. Each product is built with recycled or renewable materials, designed to be refilled, repaired, and adored for years.</p>
+        <h2>Engineered by students. Driven by passion.</h2>
+        <p class="lead">
+          Helios Racing is a student-led team focused on designing, building and
+          testing competitive race cars while learning real engineering skills.
+        </p>
         <ul style="margin:0 0 18px 18px;color:#3a3a3a">
-          <li>Carbon‑neutral shipping</li>
-          <li>Plastic‑free packaging</li>
-          <li>1% of sales to reforestation</li>
+          <li>Hands-on engineering experience</li>
+          <li>Teamwork across disciplines</li>
+          <li>Competing on an international stage</li>
         </ul>
         <a href="#journal" class="btn">Read the journal</a>
       </div>
@@ -126,45 +168,69 @@
     <section class="section container" aria-label="Newsletter">
       <div class="newsletter">
         <div>
-          <h3>Get 10% off your first order</h3>
-          <p>Join our newsletter for launches, limited drops, and tips for a greener home.</p>
+          <h3>Get team updates</h3>
+          <p>Join our mailing list to follow our builds, races, and events.</p>
         </div>
-        <form aria-label="Subscribe to newsletter" onsubmit="event.preventDefault(); alert('Thanks! Check your inbox to confirm.'); this.reset();">
+        <form
+          aria-label="Subscribe to newsletter"
+          onsubmit="event.preventDefault(); alert('Thanks! Check your inbox to confirm.'); this.reset();"
+        >
           <label for="email" class="sr-only">Email</label>
-          <input id="email" type="email" placeholder="you@example.com" required>
+          <input id="email" type="email" placeholder="you@example.com" required />
           <button class="btn primary" type="submit">Subscribe</button>
         </form>
       </div>
     </section>
 
-    <!-- Instagram -->
-    <section class="section container" aria-label="Instagram">
+    <section class="section container" aria-label="Instagram feed">
       <h2>Follow us on Instagram</h2>
       <p class="lead">@he_lios_racing — keep up with our latest news</p>
       <div class="ig-grid">
-        <img src="https://images.unsplash.com/photo-1556910633-5099dc3971f5?q=80&w=1200&auto=format&fit=crop" alt="Kitchen counter"/>
-        <img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?q=80&w=1200&auto=format&fit=crop" alt="Dining table"/>
-        <img src="https://images.unsplash.com/photo-1523419411351-c6d0d7c9a3f1?q=80&w=1200&auto=format&fit=crop" alt="Shelves"/>
-        <img src="https://images.unsplash.com/photo-1520880867055-1e30d1cb001c?q=80&w=1200&auto=format&fit=crop" alt="Bathroom"/>
-        <img src="https://images.unsplash.com/photo-1560185008-b033106af2b8?q=80&w=1200&auto=format&fit=crop" alt="Living room"/>
-        <img src="https://images.unsplash.com/photo-1607305399517-0087a2b0e8d2?q=80&w=1200&auto=format&fit=crop" alt="Textiles"/>
+        <img
+          src="https://images.unsplash.com/photo-1556910633-5099dc3971f5?q=80&w=1200&auto=format&fit=crop"
+          alt="Workshop detail"
+        />
+        <img
+          src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?q=80&w=1200&auto=format&fit=crop"
+          alt="Team workspace"
+        />
+        <img
+          src="https://images.unsplash.com/photo-1523419411351-c6d0d7c9a3f1?q=80&w=1200&auto=format&fit=crop"
+          alt="Parts and tools"
+        />
+        <img
+          src="https://images.unsplash.com/photo-1520880867055-1e30d1cb001c?q=80&w=1200&auto=format&fit=crop"
+          alt="Garage"
+        />
+        <img
+          src="https://images.unsplash.com/photo-1560185008-b033106af2b8?q=80&w=1200&auto=format&fit=crop"
+          alt="Team area"
+        />
+        <img
+          src="https://images.unsplash.com/photo-1607305399517-0087a2b0e8d2?q=80&w=1200&auto=format&fit=crop"
+          alt="Details"
+        />
       </div>
     </section>
   </main>
 
-  <!-- Footer -->
   <footer id="contact">
     <div class="container foot">
       <div>
         <div class="brand" style="margin-bottom:8px">
-          <div class="logo" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M2 12h20"/></svg></div>
-          <strong>EverHome</strong>
+          <div class="logo" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                 stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M12 2v20M2 12h20" />
+            </svg>
+          </div>
+          <strong>Helios Racing</strong>
         </div>
-        <p>Thoughtfully designed home goods that tread lightly.</p>
+        <p>Student-powered racing, engineering, and innovation.</p>
         <div class="social">
           <a href="#" aria-label="Instagram" title="Instagram">📷</a>
           <a href="#" aria-label="TikTok" title="TikTok">🎤</a>
-          <a href="#" aria-label="Pinterest" title="Pinterest">📌</a>
+          <a href="#" aria-label="YouTube" title="YouTube">▶️</a>
         </div>
       </div>
     </div>
